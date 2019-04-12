@@ -5,7 +5,6 @@
   "description": "Built with Material Starter Kit, a file template to get you up and running with Material Components for the Web.",
   "scripts": {
     "build": "webpack -p",
-    "//": "If you are building your app locally, in the following line remove everything after webpack-dev-server",
     "start": "webpack-dev-server"
   },
   "devDependencies": {
@@ -23,9 +22,13 @@
     "webpack-dev-server": "^3.1.11"
   },
   "dependencies": {
-    "@material/button": "^0.43.0",
-    "@material/ripple": "^0.43.0",
-    "@material/typography": "^0.42.0"
+    "@material/button": "^1.1.0",
+    "@material/checkbox": "^1.1.0",
+    "@material/elevation": "^1.1.0",
+    "@material/form-field": "^1.1.0",
+    "@material/ripple": "^1.1.0",
+    "@material/textfield": "^1.1.1",
+    "@material/typography": "^1.0.0"
   },
   "engines": {
     "node": "10.x"

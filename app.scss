@@ -6,35 +6,60 @@
 // Import the styles for each MDC Web component
 @import "@material/typography/mdc-typography";
 @import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+@import "@material/elevation/mdc-elevation";
+@import "@material/form-field/mdc-form-field";
+@import "@material/checkbox/mdc-checkbox";
 
-// This sets all <h1>,...,<h6> elements with Material headline1,...,headline6 typography styles
-// Check out the MDC Web documentation for how to use MDC Typography Sass mixins:
-// https://github.com/material-components/material-components-web/tree/master/packages/mdc-typography
-h1 {
-  @include mdc-typography(headline1);
+// Body
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-h2 {
-  @include mdc-typography(headline2); 
+// Override line height on body text
+.mdc-typography--body2 {
+  line-height: 1.8;
 }
 
-h3 {
-  @include mdc-typography(headline3); 
+// Style intro text
+.introText {
+  line-height: 1.8;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  color: dimgray;
 }
 
-h4 {
-  @include mdc-typography(headline4); 
+// Login Container
+.loginContainer {
+  max-width: 350px;
+  text-align: center;
+  padding: 2rem;
 }
 
-h5 {
-  @include mdc-typography(headline5); 
+// Inputs {
+.mdc-text-field {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-h6 {
-  @include mdc-typography(headline6); 
+// Action button container 
+.actionContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
 }
 
-// This sets all <p> elements with Material body1 typography styles
-p {
-  @include mdc-typography(body1);
+.getHelp {
+  margin-right: 1rem;
+  color: gray;
+}
+
+// override button text styles
+.checkboxLabel {
+  color: dimgray;
+  font-size: 90%;
 }
