@@ -27,12 +27,12 @@
         </div>
       </div>
       <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon password">
-        <i class="material-icons mdc-text-field__icon">visibility</i>
-        <input class="mdc-text-field__input">
+        <button class="material-icons mdc-text-field__icon revealPassword" onClick=showPassword()>visibility</button>
+        <input type="password" class="passwordField mdc-text-field__input">
         <div class="mdc-notched-outline">
           <div class="mdc-notched-outline__leading"></div>
           <div class="mdc-notched-outline__notch">
-            <label class="mdc-floating-label">Passphrase</label>
+            <label class="mdc-floating-label">Password</label>
           </div>
           <div class="mdc-notched-outline__trailing"></div>
         </div>
@@ -66,5 +66,13 @@
     
     <!-- import the Material javascript file -->
     <script src="bundle.js" async></script>
+
+    <!-- Function that handles password show -->
+    <script>
+      const showPassword = () => {
+        const passwordField = document.querySelector(".passwordField");
+        passwordField.type === "password" ? passwordField.type = "text" : passwordField.type = "password"
+      };
+    </script>
   </body>
 </html>

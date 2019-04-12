@@ -63,3 +63,12 @@ body {
   color: dimgray;
   font-size: 90%;
 }
+
+.mdc-text-field__icon.revealPassword {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+  pointer-events: all;
+}
