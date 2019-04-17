@@ -37,24 +37,24 @@ body {
 .loginContainer {
   max-width: 350px;
   text-align: center;
-  padding: 2rem;
+  padding: 32px;
 }
 
 // Inputs {
 .mdc-text-field {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 // Action button container 
 .actionContainer {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2rem;
+  margin-top: 32px;
 }
 
 .getHelp {
-  margin-right: 1rem;
+  margin-right: 16px;
   color: gray;
 }
 
